@@ -1,0 +1,26 @@
+{
+    "name": "nearby-locations",
+    "version": "1.0.0",
+    "description": "'shows near by locations in a given range'",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "nearby",
+        "locations"
+    ],
+    "author": "Sathish Gajarla",
+    "license": "ISC",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run lint",
+            "git add"
+        ]
+    }
+}
