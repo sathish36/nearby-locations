@@ -1,0 +1,16 @@
+.App {
+    text-align: center;
+    margin: 20%;
+    margin-top:5%;
+    margin-bottom: 4%;
+
+    .loading,.no-partners{
+      font-size: 30px;
+      font-weight: 400;
+      padding-top: 10%;
+      opacity: 0.4;
+    }
+    .pagination{
+      text-align: end;
+    }
+  }

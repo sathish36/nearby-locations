@@ -37,7 +37,7 @@ export class Application {
         const cors = {
             allowMethods: ['GET', 'HEAD', 'PUT', 'POST', 'DELETE', 'PATCH'],
             exposeHeaders: ['X-Request-Id'],
-            origin: '*',
+            origin: 'http://localhost:3000',
         };
         setApplicationConfig(app, {
             controllers: CommonUtils.getObjectValues(controllers),

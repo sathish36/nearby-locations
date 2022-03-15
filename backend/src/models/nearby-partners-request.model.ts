@@ -19,7 +19,7 @@ enum SortOrder {
 export class NearByPartnersRequest {
     @IsNumber()
     @Min(0)
-    nearBy: number;
+    radius: number;
 
     @IsLatitude()
     @IsNotEmpty()

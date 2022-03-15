@@ -1,0 +1,33 @@
+.organization{
+    text-align: left;
+    border: 1px solid rgba(30, 30, 30, 0.05);
+    margin-bottom: 8px;
+    background-color: rgba(0, 0, 1, 0.15);
+    border-radius: 4px;
+    padding-left: 4px;
+
+    .org-name{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .office{
+        margin-left: 10px;
+
+        .office-header{
+            font-size: 14px;
+            font-weight: 600;
+            color: black;
+            opacity: 0.7;
+        }
+        font-size: 14px;
+
+        .label{
+            color: gray;
+        }
+        .data{
+            color: black;
+            padding-left:8px;
+            font-weight: 500;
+        }
+    }
+}

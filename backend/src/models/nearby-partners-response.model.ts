@@ -44,13 +44,18 @@ export class NearByPartnersResponse {
     offset: number;
 
     @IsNumber()
+    @Min(0)
+    total: number;
+
+    @IsNumber()
     @Min(1)
     @Max(50)
     limit: number;
 
-    constructor({ data, offset, limit }: NearByPartnersType) {
+    constructor({ data, offset, limit, total }: NearByPartnersType) {
         this.offset = offset;
         this.limit = limit;
+        this.total = total;
         this.data = data.map((p) => new PartnerDetailsModel(p));
     }
 }
