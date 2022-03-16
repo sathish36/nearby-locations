@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { IWindow } from '../interfaces';
 
-
 const customWindow: IWindow = window;
 
 if (!customWindow || !customWindow.config || !customWindow.config.baseUrl) {

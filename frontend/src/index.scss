@@ -24,15 +24,15 @@ code {
     opacity: 0;
 }
 
-@media print {  
-  @page {
-    size: 400mm 1000mm; /* landscape */
-    /* you can also specify margins here: */
-    margin: 25mm;
-    margin-right: 45mm; /* for compatibility with both A4 and Letter */
-  }   
-  body {
-    overflow-y: visible !important; 
-}
-// body{ overflow-y: visible !important; }
+@media print {
+    @page {
+        size: 400mm 1000mm; /* landscape */
+        /* you can also specify margins here: */
+        margin: 25mm;
+        margin-right: 45mm; /* for compatibility with both A4 and Letter */
+    }
+    body {
+        overflow-y: visible !important;
+    }
+    // body{ overflow-y: visible !important; }
 }

@@ -1,6 +1,6 @@
-export interface IWindow extends Window{
+export interface IWindow extends Window {
     config?: {
-        basename:string;
+        basename: string;
         baseUrl: string;
-    }
+    };
 }

@@ -3,5 +3,5 @@
  */
 
 export const URLS = {
-    getNearByPartners: '/api/partners/nearby'
-}
+    getNearByPartners: '/api/partners/nearby',
+};
