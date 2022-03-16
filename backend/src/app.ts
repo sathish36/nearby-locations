@@ -6,6 +6,7 @@ import * as bodyParser from 'body-parser';
 import Helmet from 'helmet';
 import Express from 'express';
 import morgan from 'morgan';
+import path from 'path';
 
 import * as controllers from '@app/controllers';
 import { CommonUtils } from '@app/utils';
@@ -28,7 +29,9 @@ export class Application {
         useRoutingContainer(Container);
 
         const app = Express();
-
+        console.log(path.join(__dirname, '../../frontend/build'))
+        app.use(Express.static(path.join(__dirname, '../../frontend/build')));
+        
         app.use(morgan('combined'));
         app.use(Helmet());
         app.use(bodyParser.urlencoded({ extended: false, limit: '10mb' }));
@@ -47,7 +50,6 @@ export class Application {
             routePrefix: '/api',
             development: false,
         });
-
         app.listen(Config.port, () => {
             console.info(`server started on port ${Config.port}`);
         });
