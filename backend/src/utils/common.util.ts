@@ -1,5 +1,5 @@
-import { ONE_EIGHTY, PI, RADIUS_OF_EARTH } from '@app/constants';
-import { SortOrder } from '@app/enums';
+import { ONE_EIGHTY, PI, RADIUS_OF_EARTH } from '../constants';
+import { SortOrder } from '../enums';
 
 export class CommonUtils {
     /**
@@ -18,7 +18,7 @@ export class CommonUtils {
      *
      * @returns radians
      */
-    private static toRadians(degrees: number): number {
+    public static toRadians(degrees: number): number {
         return degrees * (PI / ONE_EIGHTY);
     }
 

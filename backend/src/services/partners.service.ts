@@ -1,8 +1,8 @@
 import { Service } from 'typedi';
 
-import { NearByPartnersRequest } from '@app/models';
-import { NearByPartnersType, OfficeType, PartnerType } from '@app/types';
-import { CommonUtils } from '@app/utils';
+import { NearByPartnersRequest } from '../models';
+import { NearByPartnersType, OfficeType, PartnerType } from '../types';
+import { CommonUtils } from '../utils';
 
 /* 
 
@@ -15,7 +15,7 @@ const partnersData: PartnerType[] = require('../data/partners.js');
 
 @Service()
 export class PartnersService {
-    public async getNearbyPartners(params: NearByPartnersRequest): Promise<NearByPartnersType> {
+    public getNearbyPartners(params: NearByPartnersRequest): NearByPartnersType {
         const { limit, offset, long, lat, radius } = params;
         let { sortKey, sortOrder } = params;
 
