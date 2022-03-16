@@ -8,10 +8,10 @@ import Express from 'express';
 import morgan from 'morgan';
 import path from 'path';
 
-import * as controllers from '@app/controllers';
-import { CommonUtils } from '@app/utils';
+import * as controllers from './controllers';
+import { CommonUtils } from './utils';
 
-import { Config } from '@app/configs';
+import { Config } from './configs';
 
 /* eslint-disable class-methods-use-this */
 export class Application {
@@ -29,7 +29,6 @@ export class Application {
         useRoutingContainer(Container);
 
         const app = Express();
-        console.log(path.join(__dirname, '../../frontend/build'))
         app.use(Express.static(path.join(__dirname, '../../frontend/build')));
         
         app.use(morgan('combined'));
@@ -40,7 +39,7 @@ export class Application {
         const cors = {
             allowMethods: ['GET', 'HEAD', 'PUT', 'POST', 'DELETE', 'PATCH'],
             exposeHeaders: ['X-Request-Id'],
-            origin: 'http://localhost:3000',
+            origin: '*',
         };
         setApplicationConfig(app, {
             controllers: CommonUtils.getObjectValues(controllers),

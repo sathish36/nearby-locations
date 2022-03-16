@@ -1,4 +1,4 @@
-import { IConfig } from '@app/interfaces';
+import { IConfig } from '../../interfaces';
 
 // Load environment variables from .env file
 import { config as loadEnvConfig } from 'dotenv';

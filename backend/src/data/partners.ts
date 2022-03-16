@@ -1,4 +1,4 @@
-module.exports = [
+const partnersData = [
     {
         id: 1,
         urlName: 'balance-at-work',
@@ -310,3 +310,7 @@ module.exports = [
         ],
     },
 ];
+
+export {
+    partnersData
+}

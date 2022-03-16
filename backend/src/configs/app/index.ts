@@ -1,4 +1,4 @@
-import { IConfig } from '@app/interfaces';
+import { IConfig } from '../../interfaces';
 import { config as loadEnvConfig } from 'dotenv';
 
 import { development } from './development.config';

@@ -1,7 +1,7 @@
 import { JsonController, Get } from 'routing-controllers';
 import { ResponseSchema } from 'routing-controllers-openapi';
 
-import { HealthStatusResponse } from '@app/models';
+import { HealthStatusResponse } from '../models';
 
 @JsonController('/health')
 export class HealthController {

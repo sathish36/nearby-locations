@@ -11,7 +11,7 @@ import { CommonUtils } from '../utils';
     with spatial column will give the result in faster way with paginated data
 */
 
-const partnersData: PartnerType[] = require('../data/partners.js');
+import { partnersData } from '../data/partners';
 
 @Service()
 export class PartnersService {
@@ -60,7 +60,7 @@ export class PartnersService {
             data: nearbyPartners,
             limit,
             offset,
-            total:totalFound
+            total: totalFound
         };
     }
 }

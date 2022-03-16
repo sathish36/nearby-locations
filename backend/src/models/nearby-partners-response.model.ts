@@ -1,7 +1,7 @@
 import { Type } from 'class-transformer';
 import { IsArray, IsNumber, IsString, Max, Min } from 'class-validator';
 
-import { NearByPartnersType, OfficeType, PartnerType } from '@app/types';
+import { NearByPartnersType, OfficeType, PartnerType } from '../types';
 
 class OfficeModel {
     @IsString()
