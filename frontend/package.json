@@ -20,7 +20,7 @@
     "start": "react-app-rewired start",
     "start:force": "SKIP_PREFLIGHT_CHECK=true react-app-rewired start",
     "build": "react-app-rewired build",
-    "build:force": "SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
+    "build:force": "INLINE_RUNTIME_CHUNK=false SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix src",
     "pretty": "prettier --write 'src/**'",
