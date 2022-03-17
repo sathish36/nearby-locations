@@ -1,6 +1,6 @@
 #docker build -t sathishgajarla/nearby-locations:0.0.1 -f Dockerfile .
 #docker push sathishgajarla/nearby-locations:0.0.1
-#docker run -p 80:9000 sathishgajarla/nearby-locations:0.0.1
+#docker run -p 9009:9009 sathishgajarla/nearby-locations:0.0.1
 
 #Builder step
 FROM node:16-alpine as builder
